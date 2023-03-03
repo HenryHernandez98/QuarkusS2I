@@ -1,0 +1,89 @@
+[{
+  "apiVersion" : "apps/v1",
+  "kind" : "Deployment",
+  "metadata" : {
+    "annotations" : {
+      "app.quarkus.io/commit-id" : "3594eeb8b5663d5ec65ca8992b6cfe31eb191171",
+      "app.quarkus.io/build-timestamp" : "2023-03-03 - 15:03:59 +0000"
+    },
+    "labels" : {
+      "app.kubernetes.io/name" : "quarkuslabs-services",
+      "app.kubernetes.io/version" : "1.0.0-SNAPSHOT"
+    },
+    "name" : "quarkuslabs-services"
+  },
+  "spec" : {
+    "replicas" : 1,
+    "selector" : {
+      "matchLabels" : {
+        "app.kubernetes.io/name" : "quarkuslabs-services",
+        "app.kubernetes.io/version" : "1.0.0-SNAPSHOT"
+      }
+    },
+    "template" : {
+      "metadata" : {
+        "annotations" : {
+          "app.quarkus.io/commit-id" : "3594eeb8b5663d5ec65ca8992b6cfe31eb191171",
+          "app.quarkus.io/build-timestamp" : "2023-03-03 - 15:03:59 +0000"
+        },
+        "labels" : {
+          "app.kubernetes.io/name" : "quarkuslabs-services",
+          "app.kubernetes.io/version" : "1.0.0-SNAPSHOT"
+        }
+      },
+      "spec" : {
+        "containers" : [ {
+          "env" : [ {
+            "name" : "KUBERNETES_NAMESPACE",
+            "valueFrom" : {
+              "fieldRef" : {
+                "fieldPath" : "metadata.namespace"
+              }
+            }
+          }, {
+            "name" : "JAVA_APP_JAR",
+            "value" : "/deployments/quarkus-run.jar"
+          }, {
+            "name" : "JAVA_OPTIONS",
+            "value" : ""
+          } ],
+          "image" : "hehernandez/quarkuslabs-services:1.0.0-SNAPSHOT",
+          "imagePullPolicy" : "Always",
+          "name" : "quarkuslabs-services",
+          "ports" : [ {
+            "containerPort" : 8080,
+            "name" : "http",
+            "protocol" : "TCP"
+          } ]
+        } ]
+      }
+    }
+  }
+},{
+  "apiVersion" : "v1",
+  "kind" : "Service",
+  "metadata" : {
+    "annotations" : {
+      "app.quarkus.io/commit-id" : "3594eeb8b5663d5ec65ca8992b6cfe31eb191171",
+      "app.quarkus.io/build-timestamp" : "2023-03-03 - 15:03:59 +0000"
+    },
+    "labels" : {
+      "app.kubernetes.io/name" : "quarkuslabs-services",
+      "app.kubernetes.io/version" : "1.0.0-SNAPSHOT"
+    },
+    "name" : "quarkuslabs-services"
+  },
+  "spec" : {
+    "ports" : [ {
+      "name" : "http",
+      "port" : 80,
+      "protocol" : "TCP",
+      "targetPort" : 8080
+    } ],
+    "selector" : {
+      "app.kubernetes.io/name" : "quarkuslabs-services",
+      "app.kubernetes.io/version" : "1.0.0-SNAPSHOT"
+    },
+    "type" : "ClusterIP"
+  }
+}]

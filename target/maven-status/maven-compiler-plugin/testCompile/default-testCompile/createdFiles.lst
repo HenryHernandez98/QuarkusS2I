@@ -1,0 +1,7 @@
+net\gbm\software\infraestructure\provider\BCCR\soapClient\TestBCCRProvider.class
+net\gbm\software\infraestructure\provider\ProviderTest.class
+net\gbm\software\application\mapper\MapperTest.class
+net\gbm\software\domain\service\GreetingResourceIT.class
+net\gbm\software\infraestructure\provider\BCCR\implement\ImplementBCCRTest.class
+net\gbm\software\application\controller\GreetingResourceTest.class
+net\gbm\software\infraestructure\adapter\AdapterTest.class
