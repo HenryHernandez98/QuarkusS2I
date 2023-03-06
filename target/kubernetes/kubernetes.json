@@ -3,12 +3,12 @@
   "kind" : "Deployment",
   "metadata" : {
     "annotations" : {
-      "app.quarkus.io/commit-id" : "3594eeb8b5663d5ec65ca8992b6cfe31eb191171",
-      "app.quarkus.io/build-timestamp" : "2023-03-03 - 15:03:59 +0000"
+      "app.quarkus.io/commit-id" : "6a98a5ecf56f66c012861a8ea0d148b98234e1b1",
+      "app.quarkus.io/build-timestamp" : "2023-03-06 - 14:42:11 +0000"
     },
     "labels" : {
-      "app.kubernetes.io/name" : "quarkuslabs-services",
-      "app.kubernetes.io/version" : "1.0.0-SNAPSHOT"
+      "app.kubernetes.io/version" : "1.0.0-SNAPSHOT",
+      "app.kubernetes.io/name" : "quarkuslabs-services"
     },
     "name" : "quarkuslabs-services"
   },
@@ -16,19 +16,19 @@
     "replicas" : 1,
     "selector" : {
       "matchLabels" : {
-        "app.kubernetes.io/name" : "quarkuslabs-services",
-        "app.kubernetes.io/version" : "1.0.0-SNAPSHOT"
+        "app.kubernetes.io/version" : "1.0.0-SNAPSHOT",
+        "app.kubernetes.io/name" : "quarkuslabs-services"
       }
     },
     "template" : {
       "metadata" : {
         "annotations" : {
-          "app.quarkus.io/commit-id" : "3594eeb8b5663d5ec65ca8992b6cfe31eb191171",
-          "app.quarkus.io/build-timestamp" : "2023-03-03 - 15:03:59 +0000"
+          "app.quarkus.io/commit-id" : "6a98a5ecf56f66c012861a8ea0d148b98234e1b1",
+          "app.quarkus.io/build-timestamp" : "2023-03-06 - 14:42:11 +0000"
         },
         "labels" : {
-          "app.kubernetes.io/name" : "quarkuslabs-services",
-          "app.kubernetes.io/version" : "1.0.0-SNAPSHOT"
+          "app.kubernetes.io/version" : "1.0.0-SNAPSHOT",
+          "app.kubernetes.io/name" : "quarkuslabs-services"
         }
       },
       "spec" : {
@@ -64,8 +64,8 @@
   "kind" : "Service",
   "metadata" : {
     "annotations" : {
-      "app.quarkus.io/commit-id" : "3594eeb8b5663d5ec65ca8992b6cfe31eb191171",
-      "app.quarkus.io/build-timestamp" : "2023-03-03 - 15:03:59 +0000"
+      "app.quarkus.io/commit-id" : "6a98a5ecf56f66c012861a8ea0d148b98234e1b1",
+      "app.quarkus.io/build-timestamp" : "2023-03-06 - 14:42:11 +0000"
     },
     "labels" : {
       "app.kubernetes.io/name" : "quarkuslabs-services",

@@ -4,7 +4,7 @@
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.17+8"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:/Users/hehernandez/OneDrive - GBM Corporacion/Documents/Quarkus/QuarkusLab/QuarkusLabs"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\hehernandez\OneDrive - GBM Corporacion\Documents\Quarkus\QuarkusLab\QuarkusLabs"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="java.vendor.url" value="https://adoptium.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -19,7 +19,6 @@
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="11.0.17+8"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="quarkus.kubernetes.deploy" value="true"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\HEHERN~1\AppData\Local\Temp\"/>
     <property name="line.separator" value="
@@ -29,7 +28,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\Users\hehernandez\.m2\wrapper\dists\apache-maven-3.6.3-bin\1iopthnavndlasol9gbrbg6bf2\apache-maven-3.6.3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\hehernandez\bin;C:\Users\hehernandez\AppData\Local\Programs\Git\mingw64\bin;C:\Users\hehernandez\AppData\Local\Programs\Git\usr\local\bin;C:\Users\hehernandez\AppData\Local\Programs\Git\usr\bin;C:\Users\hehernandez\AppData\Local\Programs\Git\usr\bin;C:\Users\hehernandez\AppData\Local\Programs\Git\mingw64\bin;C:\Users\hehernandez\AppData\Local\Programs\Git\usr\bin;C:\Users\hehernandez\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\dotnet;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\Users\hehernandez\AppData\Local\Microsoft\WindowsApps;C:\Users\hehernandez\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hehernandez\AppData\Local\Programs\Git\cmd;C:\Users\hehernandez\AppData\Roaming\npm;C:\Program Files\apache-maven-3.9.0\bin;C:\Users\hehernandez\AppData\Local\Programs\Git\usr\bin\vendor_perl;C:\Users\hehernandez\AppData\Local\Programs\Git\usr\bin\core_perl;."/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Users\hehernandez\AppData\Local\Microsoft\WindowsApps;C:\Users\hehernandez\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hehernandez\AppData\Local\Programs\Git\cmd;C:\Users\hehernandez\AppData\Roaming\npm;C:\Program Files\apache-maven-3.9.0\bin;;."/>
     <property name="maven.conf" value="C:\Users\hehernandez\.m2\wrapper\dists\apache-maven-3.6.3-bin\1iopthnavndlasol9gbrbg6bf2\apache-maven-3.6.3/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="55.0"/>
@@ -42,10 +41,10 @@
     <property name="file.encoding" value="Cp1252"/>
     <property name="java.specification.version" value="11"/>
     <property name="user.name" value="hehernandez"/>
-    <property name="java.class.path" value="C:/Users/hehernandez/OneDrive - GBM Corporacion/Documents/Quarkus/QuarkusLab/QuarkusLabs/.mvn/wrapper/maven-wrapper.jar"/>
+    <property name="java.class.path" value="C:\Users\hehernandez\OneDrive - GBM Corporacion\Documents\Quarkus\QuarkusLab\QuarkusLabs\.mvn\wrapper\maven-wrapper.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.apache.maven.wrapper.MavenWrapperMain package -Dquarkus.kubernetes.deploy=true"/>
+    <property name="sun.java.command" value="org.apache.maven.wrapper.MavenWrapperMain -DquarkusRegistryClient=true install"/>
     <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot"/>
     <property name="user.language" value="es"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -53,6 +52,7 @@
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="11.0.17"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
     <property name="maven.home" value="C:\Users\hehernandez\.m2\wrapper\dists\apache-maven-3.6.3-bin\1iopthnavndlasol9gbrbg6bf2\apache-maven-3.6.3"/>
     <property name="file.separator" value="\"/>
     <property name="java.version.date" value="2022-10-18"/>
@@ -60,7 +60,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="java.vendor.version" value="Temurin-11.0.17+8"/>
+    <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.desktop" value="windows"/>
+    <property name="quarkusRegistryClient" value="true"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
 </testsuite>
